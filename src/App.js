@@ -1,12 +1,15 @@
+import Home from "./pages/home/Home.jsx";
+
 
 import './App.css';
 
 function App() {
   return (
-  <>
-  Hello world!
-  </>
+  
+   <Home/> 
+    
   );
+  
 }
 
 export default App;

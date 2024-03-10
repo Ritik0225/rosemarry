@@ -1,0 +1,40 @@
+:root {
+  --font-style: "playfair-display", serif;
+  --color-white: #ffffff;
+  
+}
+
+.contact-bg {
+  background-size: cover;
+   width: 100%;
+  height: 70vh;
+  padding-top: 8rem;
+  gap: 8%; 
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px auto;
+ }
+
+
+.contact-heading {
+  font-size: 70px;
+  font-style: var(--font-style);
+  margin-bottom: 10px;
+  color: var(--color-white);
+  text-align: center; 
+}
+
+.contact-subheading {
+  width:50%;
+  font-size: 15px;
+  color: var(--color-white);
+  margin-bottom: 15px;
+  font-style: var(--font-style);
+  text-align: center; 
+}
+
