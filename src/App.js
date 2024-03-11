@@ -1,10 +1,14 @@
 
 import './App.css';
+import Navbar from './components/navbar/Navbar';
+import About from './containers/about/About';
 
 function App() {
   return (
   <>
-  Hello world!
+ <Navbar/>
+ <About/>
+
   </>
   );
 }
