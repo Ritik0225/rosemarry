@@ -13,8 +13,18 @@ font-family: "Playfair Display", serif; */
 
 :root {
   --color-bgGreen: #05281c;
-  --color-white: #ffffff;
-  --color-grey: #415a77;
   --color-offWhite: #fefae0;
+  --color-white:#ffffff;
+  --color-beige:#FFD0A2;
+  --color-cream:#f8f0e8;
+  --color-grey:#edede9;
   --font-serif: "Playfair Display", serif;
+}
+
+a{
+  color: unset;
+  text-decoration: none;
+}
+button{
+  outline: none;
 }

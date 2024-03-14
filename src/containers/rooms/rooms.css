@@ -1,0 +1,123 @@
+/* RoomsPage.css */
+
+
+.rooms{
+  padding: 7rem;
+  background-color: var(--color-white);
+}
+
+.rooms > h1{
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.rooms_cardContainer{
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.rooms_cardContainer_card{
+  background-color: var(--color-offWhite);
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 25%;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
+
+.rooms_cardContainer_card:hover{
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.rooms_cardContainer_card_imgBox{
+  /* background-color: blue; */
+  width: 100%;
+  height: 10rem;
+}
+.rooms_cardContainer_card_imgBox img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.rooms_cardContainer_card_imgBox img:hover {
+  transform: scale(1.1);
+}
+
+.rooms_cardContainer_card_info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem 2rem 2rem;
+}
+.rooms_cardContainer_card_info > h2 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* 
+
+.rooms-container {
+    margin: 20px auto;
+    max-width: 100%;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
+  
+  .head {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .head h1 {
+    font-size: 55px;
+    color: black;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .room-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    max-width: 300px;
+    padding: 20px;
+    height: 380px;
+  }
+
+.room-card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+    transform: scale(1.05);
+  }
+  */
+
+  
+  /* .room-card h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .room-card p {
+   font-size: 19px;
+  } */
+  

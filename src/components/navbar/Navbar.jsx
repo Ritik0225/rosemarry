@@ -4,20 +4,22 @@ import logo from "../../assests/logo/logo.png"
 import { Fade } from "react-reveal";
 import { CgMenu } from "react-icons/cg";
 import { CgClose } from "react-icons/cg";
-import { Form } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
+
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
-//   const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const handleToggle = () => {
     setToggle(!toggle);
   };
 
-//   const handleMenuItemClick = (path) => {
-//     navigate(path);
-//     setToggle(false);
-//   };
+  const handleMenuItemClick = (path) => {
+    navigate(path);
+    setToggle(false);
+  };
 
   return (
     <>
@@ -29,16 +31,20 @@ const Navbar = () => {
           <div className="navbar_navLinks">
             <ul>
               <li>
-                {/* <Link to={"/"}>Home</Link> */}
-                Home
+                <Link to={"/"}>Home</Link>
+               
               </li>
               <li>
-                {/* <Link to={"/about"}>About</Link> */}
-                About
+                <Link to={"/about"}>About</Link>
+                
               </li>
               <li>
-                {/* <Link to={"/attraction"}>Attractions</Link> */}
-                Attractions
+                <Link to={"/attraction"}>Attractions</Link>
+                
+              </li>
+              <li>
+                <Link to={"/contactUs"}>Contact</Link>
+                
               </li>
             </ul>
           </div>
@@ -61,30 +67,22 @@ const Navbar = () => {
               {toggle && (
                 <div className="navbar_menu_navLinks">
                   <ul>
-                    <li>
-                      {/* <Link to={"/"} onClick={() => handleMenuItemClick("/")}>
-                        Home
-                      </Link> */}
-                      Home
-                    </li>
-                    <li>
-                      {/* <Link
-                        to={"/about"}
-                        onClick={() => handleMenuItemClick("/about")}
-                      >
-                        About
-                      </Link> */}
-                      About
-                    </li>
-                    <li>
-                      {/* <Link
-                        to={"/attraction"}
-                        onClick={() => handleMenuItemClick("/attraction")}
-                      >
-                        Attractions
-                      </Link> */}
-                      Attractions
-                    </li>
+                  <li>
+                <Link to={"/"}>Home</Link>
+               
+              </li>
+              <li>
+                <Link to={"/about"}>About</Link>
+                
+              </li>
+              <li>
+                <Link to={"/attraction"}>Attractions</Link>
+                
+              </li>
+              <li>
+                <Link to={"/contactUs"}>Contact</Link>
+                
+              </li>
                   </ul>
                 </div>
               )}
