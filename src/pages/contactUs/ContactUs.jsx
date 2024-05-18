@@ -25,7 +25,7 @@ const ContactUs = () => {
                   />
                 </div>
                 <div className="contact_main_container_infoBox_card_info">
-                  <p>6,June Estate Rd,Bhimtal </p>
+                  <p>6, dehradun </p>
                   <p>Uttarakhand 263136</p>
                 </div>
               </div>
